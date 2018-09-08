@@ -1,0 +1,5 @@
+<todo-filter  on-filter='$ctrl.onFilter(search)' ></todo-filter>
+<todo-list todos="$ctrl.getTodos()" filter-value='$ctrl.filterValue'></todo-list>
+<todo-remaining  remaining='$ctrl.onRemaining()'></todo-remaining>
+<todo-archive></todo-archive>
+<todo-add on-add="$ctrl.onAdd($event)" ></todo-add>  

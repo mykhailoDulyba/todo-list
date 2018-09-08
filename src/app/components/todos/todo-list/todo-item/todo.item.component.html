@@ -1,0 +1,5 @@
+<li>  
+  <input type="checkbox" ng-model="$ctrl.todo.done">
+  <span ng-class="{'done-true': $ctrl.todo.done}" >{{$ctrl.todo.title}}</span>
+  <a href="" ng-click="$ctrl.delete($ctrl.index)">remove</a>
+</li>
