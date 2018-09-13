@@ -10,7 +10,7 @@ export const root = angular
     .module('app', [
         uiRouter,   
         ComponentModule,     
-        dataModule,
+        dataModule
         
     ])
     .component('app', AppComponent)    

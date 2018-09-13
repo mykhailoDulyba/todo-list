@@ -5,5 +5,4 @@ export const TodoListComponent = {
    },
   template: require('./todo.list.component.html'),
   controller: class TodoListController {}
-}
- 
+};

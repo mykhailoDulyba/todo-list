@@ -1,14 +1,13 @@
-import { DataService } from "../../service/data.service";
+import { DataService } from '../../service/data.service';
 
-export class TodosController {
-  public static $inject = ["DataService"];   
-  public constructor(public dataService: DataService) {}
-  public filterValue  
-  public tasks
-
-  public getTodos(){
+export class TodosController { 
+  public static $inject = ['DataService'];    
+  public filterValue;  
+  public tasks;
+  constructor(public dataService: DataService) {}
+  public getTodos() {
     this.tasks = this.dataService.getTasks();
-    return this.dataService.getTasks()
+    return this.dataService.getTasks();
   }
 
   public onAdd(addVal) {
@@ -24,5 +23,6 @@ export class TodosController {
   public onRemaining() {
     return this.dataService.remaining();
   }
+  
 }
 

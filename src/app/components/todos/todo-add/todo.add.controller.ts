@@ -1,7 +1,7 @@
 export class TodoAddController {
-  public newTask
+  public newTask;
   public onAdd;
-  public addTodo(){
+  public addTodo() {
     this.onAdd({
       $event: this.newTask
     });  

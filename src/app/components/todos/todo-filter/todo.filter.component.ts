@@ -1,7 +1,7 @@
 export const TodoFilterComponent = {
-  bindings :{
-    onFilter:'&'
+  bindings : {
+    onFilter: '&'
   },
-  template: require('./todo.filter.component.html'),
+  template: require ('./todo.filter.component.html'),
   controller: class TodoFilterController {}
-}
+};

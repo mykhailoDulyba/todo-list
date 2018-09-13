@@ -11,26 +11,26 @@
             });
  */ 
 export class DataService {    
-    constructor() {}
+    
 
-    public tasks =[{
-      title:"task-1",
+    public tasks = [{
+      title: 'task-1',
       done: true
     },
     {
-      title:"do",
+      title: 'do',
       done: true
     },
     {
-      title:"eat some",
+      title: 'eat some',
       done: true
     },
     {
-      title:"task do 4",
+      title: 'task do 4',
       done: false
     }];
-
-  public getTasks(){     
+  
+  public getTasks() {     
     return this.tasks;
   }
   public removeTodo(index) {
@@ -39,7 +39,7 @@ export class DataService {
   public addTodo(todo) {
     this.tasks = [...this.tasks, todo];     
   }
-  public remaining(){
+  public remaining() {
     return this.tasks.filter(item => !item.done).length;
   }
   public archiveTodos() {
